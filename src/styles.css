@@ -1,0 +1,91 @@
+.container {
+  text-align: center;
+  padding: 0 55px;
+  border: 2px solid;
+  border-radius: 3px;
+  border-color: #596acb;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  width: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  margin-top: 40px;
+  color: #636b7d;
+  font-size: 21px;
+}
+h2,
+h3 {
+  margin-top: 20px;
+  color: #636b7d;
+  font-size: smaller;
+  line-height: 3px;
+}
+.body-temperature {
+  display: inline-block;
+}
+#celsius-link,
+#fahrenhiit-link {
+  color: #636b7d;
+}
+.current {
+  margin-top: -30px;
+  color: #636b7d;
+  font-size: 10px;
+}
+.current-btn {
+  color: white;
+  border: 2px solid;
+  border-color: white;
+  background-color: #596acb;
+  padding: 0 10px;
+  font-size: 18px;
+  border-radius: 2px;
+  transition: all 200ms ease;
+}
+.current-btn:hover {
+  border-color: #5caaff;
+  color: white;
+}
+.forecast {
+  color: #636b7d;
+  font-size: 10px;
+  margin-right: 350px;
+}
+
+.city {
+  width: 330px;
+  border: 2px solid;
+  border-radius: 2px;
+  border-color: #636b7d;
+}
+::placeholder {
+  color: #596acb;
+  font-size: smaller;
+}
+.search {
+  color: #596acb;
+  border: 2px solid;
+  border-color: #596acb;
+  background-color: white;
+  padding: 0 10px;
+  font-size: 18px;
+  border-radius: 2px;
+  transition: all 200ms ease;
+}
+.search:hover {
+  border-color: #5caaff;
+  color: #5caaff;
+}
+
+.sunny {
+  font-size: 30px;
+}
+.row {
+  margin-bottom: 50px;
+  font-size: 12px;
+  color: #636b7d;
+}
+.emoji {
+  font-size: 28px;
+}

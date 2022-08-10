@@ -106,6 +106,16 @@ function showTemp(response) {
   let h3 = document.querySelector("h3");
   let temperature = Math.round(response.data.main.temp);
   h3.innerHTML = temperature + "°C";
+  document.querySelector(".conditions").innerHTML =
+    response.data.weather[0].main;
+  document.querySelector("#feels").innerHTML = Math.round(
+    response.data.main.feels_like
+  );
+  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
+  document.querySelector("#wind").innerHTML = Math.round(
+    response.data.wind.speed * 3.6
+  );
+  document.querySelector("h1").innerHTML = response.data.name;
 }
 
 function searchCity() {

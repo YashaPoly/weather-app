@@ -45,6 +45,11 @@ function showDate() {
 let currentMonth = document.querySelector("#current-month");
 currentMonth.innerHTML = showDate();
 // Feature #2
+function search(city) {
+  let apiKey = "a6d0f22831811d420a6a12095a318882";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemp);
+}
 let form = document.querySelector("#formSearch");
 
 function showSearch(event) {
@@ -54,6 +59,7 @@ function showSearch(event) {
   h1.innerHTML = `${searchInput.value}`;
 }
 form.addEventListener("submit", showSearch);
+search("London");
 
 // Bonus Feature
 
